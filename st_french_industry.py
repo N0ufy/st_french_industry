@@ -32,7 +32,7 @@ df_quantile2 = df[df['salaire_categorie'] == 'quantile 2'].reset_index(drop=True
 df_quantile3 = df[df['salaire_categorie'] == 'quantile 3'].reset_index(drop=True)
 df_quantile4 = df[df['salaire_categorie'] == 'quantile 4'].reset_index(drop=True)
 
-chart_data = pd.DataFrame({'lat': lat, 'lon':lon})
+
 
 st.pydeck_chart(pdk.Deck(
     map_style=None,
