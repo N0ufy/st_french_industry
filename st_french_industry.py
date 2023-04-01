@@ -7,9 +7,9 @@ st.title("""
 # French **Industry** #
 # """)
 
-    st.header('Test 1')
-    latitude = [i for i in df.latitude]
-    longitude = [i for i in df.longitude]
-    df_geo = pd.DataFrame({ 'lat': latitude , 'lon': longitude})
+st.header('Test 1')
+latitude = [i for i in df.latitude]
+longitude = [i for i in df.longitude]
+df_geo = pd.DataFrame({ 'lat': latitude , 'lon': longitude})
 
-    st.map(df_geo, use_container_width=True)
+st.map(df_geo, use_container_width=True)
