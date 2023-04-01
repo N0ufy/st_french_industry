@@ -67,7 +67,7 @@ st.pydeck_chart(pdk.Deck(
          pdk.Layer(
            'HexagonLayer',
            data=df_quantile2,
-           get_position='[lon, lat]',
+           get_position='[longitude, latitude]',
            radius=200,
            elevation_scale=4,
            elevation_range=[500, 700],
@@ -77,7 +77,7 @@ st.pydeck_chart(pdk.Deck(
          pdk.Layer(
            'HexagonLayer',
            data=df_quantile1,
-           get_position='[lon, lat]',
+           get_position='[longitude, latitude]',
            radius=200,
            elevation_scale=4,
            elevation_range=[500, 700],
