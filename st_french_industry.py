@@ -26,7 +26,7 @@ import pandas as pd
 import numpy as np
 import pydeck as pdk
 
-df = pd.read_csv('merged_geo_salary_ets.csv')
+df = pd.read_csv('merged_ets.csv')
 df['elevation'] = df['E14TST']
 
 
