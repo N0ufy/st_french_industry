@@ -48,10 +48,15 @@ st.pydeck_chart(pdk.Deck(
            'HexagonLayer',
            data=df_quantile4,
            get_position='[longitude, latitude]',
-           radius=200,
-           get_elevation='elevation',
+           auto_highlight=True,
+           elevation_scale=50,
            pickable=True,
+           elevation_range=[0, 3000],
            extruded=True,
+           coverage=1,
+           radius=1000,
+           get_elevation='elevation',
+        
         ),
 
 
