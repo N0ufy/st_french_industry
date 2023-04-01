@@ -26,9 +26,11 @@ import pandas as pd
 import numpy as np
 import pydeck as pdk
 
-chart_data = pd.DataFrame(
-   np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
-   columns=['lat', 'lon'])
+df = pd.read_csv('merged_NO_NA_geo_salary_ets.csv')
+lat = [i for i in df.latitude]
+lon = [i for i in df.longitude]
+
+chart_data = pd.DataFrame({'lat': lat, 'lon':lon})
 
 st.pydeck_chart(pdk.Deck(
     map_style=None,
