@@ -4,7 +4,7 @@ import streamlit as st
 df = pd.read_csv('merged_NO_NA_geo_salary_ets.csv')
 
 st.title("""
-# French **Industry** #
+#French **Industry**#
 # """)
 
 city = [i for i in df.LIBGEO]
