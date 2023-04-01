@@ -11,10 +11,10 @@ st.title("""#Nombre d\'ntreprises par localisation#""")
 st.pydeck_chart(pdk.Deck(
     map_style=None,
     initial_view_state=pdk.ViewState(
-        latitude=48.858370,
-        longitude=-2.294481,
-        zoom=5,
-        pitch=50,
+        latitude=46.6167,
+        longitude=-1.85,
+        zoom=3,
+        pitch=20, #pour la vue en angle de la map
     ),
     layers=[
         pdk.Layer(
@@ -34,4 +34,4 @@ st.pydeck_chart(pdk.Deck(
 
 
     ],
-))
+), use_container_width=True)
