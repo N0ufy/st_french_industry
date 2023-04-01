@@ -12,6 +12,9 @@ st.title("""
 #French **Industry**#
 # """)
 
-#df_geo = pd.DataFrame({'lat': latitude , 'lon': longitude})
+#col1, col2, col3, col4 = st.columns(4)
 
+st.header('Bas salaires - 1er quantile')
 st.map(df_quantile1 , use_container_width=True)
+st.header('Classe moyenne inf - 2ème quantile')
+st.map(df_quantile2 , use_container_width=True)
