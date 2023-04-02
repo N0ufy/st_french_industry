@@ -26,7 +26,7 @@ st.pydeck_chart(pdk.Deck(
            auto_highlight=True,
            elevation_scale=100,
            pickable=True,
-           elevation_range=[0, 3000],
+           elevation_range=[0, 10000],
            extruded=True,
            coverage=1,
            radius=1000,
