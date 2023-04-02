@@ -29,12 +29,12 @@ st.pydeck_chart(pdk.Deck(
            auto_highlight=True,
            #elevation_scale=5,
            pickable=True,
-           #elevation_range= [50,50],
+           #elevation_range= [50,50],  
            extruded=True,
            coverage=1,
            radius=400,
            get_elevation='E14TST',
-           get_fill_color=[255, 'Gcolor', 45 , 140]
+           get_fill_color=['Gcolor', 'Gcolor', 45 , 140]
         )],
 ), use_container_width=True)
 
