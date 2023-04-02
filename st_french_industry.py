@@ -21,30 +21,12 @@ st.pydeck_chart(pdk.Deck(
         zoom=5,
         pitch=10, #pour la vue en angle de la map
     ),
-    layers=[pdk.Layer(
-           'ScatterplotLayer',
-           data=q4,
-           get_position='[longitude, latitude]',
-           auto_highlight=False,
-           elevation_scale=50,
-           pickable=True,
-           elevation_range= [750,1000],
-           extruded=True,
-           coverage=1,
-           radius=1000,
-           get_elevation='E14TST',
-           get_fill_color=[180, 0, 200, 140],
-     
-        ),
-    ],
-), use_container_width=True)
-
-"""
+    layers=[
         pdk.Layer(
            'HexagonLayer',
            data=q1,
            get_position='[longitude, latitude]',
-           auto_highlight=False,
+           auto_highlight=True,
            elevation_scale=20,
            pickable=True,
            elevation_range= [0,250],
@@ -60,7 +42,7 @@ st.pydeck_chart(pdk.Deck(
            'HexagonLayer',
            data=q2,
            get_position='[longitude, latitude]',
-           auto_highlight=False,
+           auto_highlight=True,
            elevation_scale=30,
            pickable=True,
            elevation_range= [250,500],
@@ -75,7 +57,7 @@ st.pydeck_chart(pdk.Deck(
            'HexagonLayer',
            data=q3,
            get_position='[longitude, latitude]',
-           auto_highlight=False,
+           auto_highlight=True,
            elevation_scale=40,
            pickable=True,
            elevation_range= [500,750],
@@ -84,5 +66,22 @@ st.pydeck_chart(pdk.Deck(
            radius=800,
            get_elevation='E14TST',
            get_fill_color='[180, 0, 200, 140]'
-           
-        ),"""
+        
+        ),
+        pdk.Layer(
+           'HexagonLayer',
+           data=q4,
+           get_position='[longitude, latitude]',
+           auto_highlight=True,
+           elevation_scale=50,
+           pickable=True,
+           elevation_range= [750,1000],
+           extruded=True,
+           coverage=1,
+           radius=1000,
+           get_elevation='E14TST',
+           get_fill_color=[180, 0, 200, 140],
+        
+        ),
+    ],
+), use_container_width=True)
