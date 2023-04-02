@@ -32,7 +32,7 @@ st.pydeck_chart(pdk.Deck(
            elevation_range= [0,250],
            extruded=True,
            coverage=1,
-           radius=800,
+           radius=400,
            get_elevation='E14TST',
         
         ),
@@ -47,11 +47,37 @@ st.pydeck_chart(pdk.Deck(
            elevation_range= [250,500],
            extruded=True,
            coverage=1,
+           radius=600,
+           get_elevation='E14TST',
+        
+        ),
+        pdk.Layer(
+           'HexagonLayer',
+           data=q3,
+           get_position='[longitude, latitude]',
+           auto_highlight=True,
+           elevation_scale=100,
+           pickable=True,
+           elevation_range= [500,750],
+           extruded=True,
+           coverage=1,
            radius=800,
            get_elevation='E14TST',
         
         ),
-
-
+        pdk.Layer(
+           'HexagonLayer',
+           data=q4,
+           get_position='[longitude, latitude]',
+           auto_highlight=True,
+           elevation_scale=100,
+           pickable=True,
+           elevation_range= [750,1000],
+           extruded=True,
+           coverage=1,
+           radius=1000,
+           get_elevation='E14TST',
+        
+        ),
     ],
 ), use_container_width=True)
