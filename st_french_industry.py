@@ -38,8 +38,4 @@ st.pydeck_chart(pdk.Deck(
 ), use_container_width=True)
 st.write('Suivant les données INSEE pour 33.513 communes documentées')
 st.write('Données : CODGEO, latitude, longitude, E14TST')
-st.write("""Les données E14TST relatent le nombre d\'entreprises par commune. /n
-Ces données ont été divisés par quartiles (0.25, 0.50, 0.75) pour la colorimétrie. /n
-1er quartile en jaune /n
-2ème quartile en orange /n
-3ème quartile en rouge /n""")
+st.write("""Les données E14TST relatent le nombre d\'entreprises par commune. Ces données ont été divisés par quartiles (0.25, 0.50, 0.75) pour la colorimétrie.""") 
