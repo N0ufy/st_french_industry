@@ -6,6 +6,8 @@ import pydeck as pdk
 df = pd.read_csv('merged_ets.csv')
 df['elevation'] = df['E14TST']
 
+st.set_page_config(layout="wide")
+
 st.title("""Nombre d\'entreprises par localisation""")
 
 st.pydeck_chart(pdk.Deck(
