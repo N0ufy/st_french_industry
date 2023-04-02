@@ -5,6 +5,8 @@ import pydeck as pdk
 
 df = pd.read_csv('merged_ets.csv')
 df['elevation'] = df['E14TST']
+elevation_range = [df['E14TST'].min(), df['E14TST'].max()]
+
 
 st.set_page_config(page_title="French Industry Project", layout="wide")
 
@@ -26,7 +28,7 @@ st.pydeck_chart(pdk.Deck(
            auto_highlight=True,
            elevation_scale=100,
            pickable=True,
-           elevation_range=[0, 5000],
+           elevation_range= elevation_range,
            extruded=True,
            coverage=1,
            radius=800,
