@@ -7,8 +7,8 @@ df = pd.read_csv('merged_ets.csv')
 
 st.set_page_config(page_title="French Industry Project", layout="wide")
 
-st.title("""Nombre d\'entreprises par CODGEO INSEE
-**33.513 communes**""")
+st.title("""Nombre d\'entreprises par communes
+**Suivant les données INSEE pour 33.513 communes documentées avec CODGEO, latitude, longitude et nombre d'établissements**""")
 
 st.pydeck_chart(pdk.Deck(   
     map_style='dark',
