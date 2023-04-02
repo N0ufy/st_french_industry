@@ -19,14 +19,14 @@ st.pydeck_chart(pdk.Deck(
         latitude=46.6167,
         longitude=1.85,
         zoom=5,
-        pitch=20, #pour la vue en angle de la map
+        pitch=10, #pour la vue en angle de la map
     ),
     layers=[
         pdk.Layer(
            'HexagonLayer',
            data=q1,
            get_position='[longitude, latitude]',
-           auto_highlight=True,
+           auto_highlight=False,
            elevation_scale=20,
            pickable=True,
            elevation_range= [0,250],
@@ -34,6 +34,7 @@ st.pydeck_chart(pdk.Deck(
            coverage=1,
            radius=400,
            get_elevation='E14TST',
+           get_fill_color='[180, 0, 200, 140]'
         
         ),
 
@@ -41,7 +42,7 @@ st.pydeck_chart(pdk.Deck(
            'HexagonLayer',
            data=q2,
            get_position='[longitude, latitude]',
-           auto_highlight=True,
+           auto_highlight=False,
            elevation_scale=30,
            pickable=True,
            elevation_range= [250,500],
@@ -49,13 +50,14 @@ st.pydeck_chart(pdk.Deck(
            coverage=1,
            radius=600,
            get_elevation='E14TST',
+           get_fill_color='[180, 0, 200, 140]'
         
         ),
         pdk.Layer(
            'HexagonLayer',
            data=q3,
            get_position='[longitude, latitude]',
-           auto_highlight=True,
+           auto_highlight=False,
            elevation_scale=40,
            pickable=True,
            elevation_range= [500,750],
@@ -63,6 +65,7 @@ st.pydeck_chart(pdk.Deck(
            coverage=1,
            radius=800,
            get_elevation='E14TST',
+           get_fill_color='[180, 0, 200, 140]'
         
         ),
         pdk.Layer(
