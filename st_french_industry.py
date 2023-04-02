@@ -80,8 +80,7 @@ st.pydeck_chart(pdk.Deck(
            coverage=1,
            radius=1000,
            get_elevation='E14TST',
-           get_fill_color='[180, 0, 200, 140]',
-           get_line_color='[180, 0, 200, 140]'
+           get_fill_color=[180, 0, 200, 140],
         
         ),
     ],
