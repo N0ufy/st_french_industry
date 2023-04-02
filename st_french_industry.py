@@ -6,11 +6,11 @@ import pydeck as pdk
 df = pd.read_csv('merged_ets.csv')
 df['elevation'] = df['E14TST']
 
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="French Industry Project", layout="wide")
 
-st.title("""Nombre d\'entreprises par localisation""")
+st.title("""Nombre d\'entreprises par zone administrative INSEE""")
 
-st.pydeck_chart(pdk.Deck(
+st.pydeck_chart(pdk.Deck(   
     map_style='dark',
     initial_view_state=pdk.ViewState(
         latitude=46.6167,
