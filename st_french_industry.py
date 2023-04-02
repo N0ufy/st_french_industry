@@ -69,7 +69,7 @@ st.pydeck_chart(pdk.Deck(
            'HexagonLayer',
            data=q4,
            get_position='[longitude, latitude]',
-           auto_highlight=True,
+           auto_highlight=False,
            elevation_scale=50,
            pickable=True,
            elevation_range= [750,1000],
@@ -77,6 +77,7 @@ st.pydeck_chart(pdk.Deck(
            coverage=1,
            radius=1000,
            get_elevation='E14TST',
+           get_fill_color='[180, 0, 200, 140]'
         
         ),
     ],
