@@ -36,4 +36,4 @@ st.pydeck_chart(pdk.Deck(
 
 
     ],
-), use_container_width=True)
+), height= 1200, use_container_width=True)
