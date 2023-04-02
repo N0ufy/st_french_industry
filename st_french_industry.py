@@ -11,7 +11,7 @@ st.title('French Industry Project')
 #**Suivant les données INSEE pour 33.513 communes documentées avec CODGEO, latitude, longitude et nombre d'établissements**"""
 
 st.header("""Visualisation du nombre d\'entreprises par communes""")
-st.subheader("""Colorimètre par quartile : de jaune pour le 1er quartile à rouge pour le 4ème""")
+st.caption("""Colorimètre par quartile : de jaune pour le 1er quartile à rouge pour le 4ème""")
 
 st.pydeck_chart(pdk.Deck(   
     map_style='dark',
