@@ -34,7 +34,7 @@ st.pydeck_chart(pdk.Deck(
            coverage=1,
            radius=400,
            get_elevation='E14TST',
-           get_fill_color='[180, 0, 200, 140]'
+           get_fill_color='[255, 236, 25, 140]'
         
         ),
 
@@ -50,7 +50,7 @@ st.pydeck_chart(pdk.Deck(
            coverage=1,
            radius=600,
            get_elevation='E14TST',
-           get_fill_color='[180, 0, 200, 140]'
+           get_fill_color='[255, 193, 0, 140]'
         
         ),
         pdk.Layer(
@@ -65,7 +65,7 @@ st.pydeck_chart(pdk.Deck(
            coverage=1,
            radius=800,
            get_elevation='E14TST',
-           get_fill_color='[180, 0, 200, 140]'
+           get_fill_color='[255, 152, 0, 140]'
         
         ),
         pdk.Layer(
@@ -80,7 +80,7 @@ st.pydeck_chart(pdk.Deck(
            coverage=1,
            radius=1000,
            get_elevation='E14TST',
-           get_fill_color=[180, 0, 200, 140],
+           get_fill_color=[246, 65, 45, 140],
         
         ),
     ],
