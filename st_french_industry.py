@@ -8,7 +8,7 @@ df['elevation'] = df['E14TST']
 
 st.set_page_config(page_title="French Industry Project", layout="wide")
 
-st.title("""Nombre d\'entreprises par zone administrative INSEE""")
+st.title("""Nombre d\'entreprises par CODGEO INSEE""")
 
 st.pydeck_chart(pdk.Deck(   
     map_style='dark',
@@ -36,4 +36,4 @@ st.pydeck_chart(pdk.Deck(
 
 
     ],
-), height= 1200, use_container_width=True)
+), use_container_width=True)
