@@ -4,9 +4,10 @@ import numpy as np
 import pydeck as pdk
 
 df = pd.read_csv('merged_ets.csv')
-df['elevation'] = df['E14TST']
-#elevation_range = [df['E14TST'].min(), df['E14TST'].max()]
-elevation_range = [10,3000]
+q1 = df[df['salaire_categorie'] == 'quantile 1'].reset_index(drop=True)
+q2 = df[df['salaire_categorie'] == 'quantile 2'].reset_index(drop=True)
+q3 = df[df['salaire_categorie'] == 'quantile 3'].reset_index(drop=True)
+q4 = df[df['salaire_categorie'] == 'quantile 4'].reset_index(drop=True)
 
 st.set_page_config(page_title="French Industry Project", layout="wide")
 
@@ -23,16 +24,31 @@ st.pydeck_chart(pdk.Deck(
     layers=[
         pdk.Layer(
            'HexagonLayer',
-           data=df,
+           data=q1,
            get_position='[longitude, latitude]',
            auto_highlight=True,
            elevation_scale=100,
            pickable=True,
-           elevation_range= elevation_range,
+           elevation_range= [0,250],
            extruded=True,
            coverage=1,
            radius=800,
-           get_elevation='elevation',
+           get_elevation='E14TST',
+        
+        ),
+
+        pdk.Layer(
+           'HexagonLayer',
+           data=q2,
+           get_position='[longitude, latitude]',
+           auto_highlight=True,
+           elevation_scale=100,
+           pickable=True,
+           elevation_range= [250,500],
+           extruded=True,
+           coverage=1,
+           radius=800,
+           get_elevation='E14TST',
         
         ),
 
