@@ -23,7 +23,7 @@ st.pydeck_chart(pdk.Deck(
     ),
     layers=[
         pdk.Layer(
-           'HexagonLayer',
+           'ColumnLayer',
            data=q1,
            get_position='[longitude, latitude]',
            auto_highlight=True,
@@ -39,7 +39,7 @@ st.pydeck_chart(pdk.Deck(
         ),
 
         pdk.Layer(
-           'HexagonLayer',
+           'ColumnLayer',
            data=q2,
            get_position='[longitude, latitude]',
            auto_highlight=True,
@@ -54,7 +54,7 @@ st.pydeck_chart(pdk.Deck(
         
         ),
         pdk.Layer(
-           'HexagonLayer',
+           'ColumnLayer',
            data=q3,
            get_position='[longitude, latitude]',
            auto_highlight=True,
@@ -69,7 +69,7 @@ st.pydeck_chart(pdk.Deck(
         
         ),
         pdk.Layer(
-           'HexagonLayer',
+           'ColumnLayer',
            data=q4,
            get_position='[longitude, latitude]',
            auto_highlight=True,
