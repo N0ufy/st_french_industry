@@ -36,8 +36,8 @@ st.pydeck_chart(pdk.Deck(
            get_elevation='E14TST',
            get_fill_color=[255, 236, 25, 140]
         
-        ),
-        """
+        )""",
+        
         pdk.Layer(
            'ColumnLayer',
            data=q2,
