@@ -4,10 +4,6 @@ import numpy as np
 import pydeck as pdk
 
 df = pd.read_csv('merged_ets.csv')
-q1 = df[df['salaire_categorie'] == 'quantile 1'].reset_index(drop=True)
-q2 = df[df['salaire_categorie'] == 'quantile 2'].reset_index(drop=True)
-q3 = df[df['salaire_categorie'] == 'quantile 3'].reset_index(drop=True)
-q4 = df[df['salaire_categorie'] == 'quantile 4'].reset_index(drop=True)
 
 st.set_page_config(page_title="French Industry Project", layout="wide")
 
