@@ -6,7 +6,7 @@ import pydeck as pdk
 df = pd.read_csv('merged_ets.csv')
 df['elevation'] = df['E14TST']
 #elevation_range = [df['E14TST'].min(), df['E14TST'].max()]
-elevation_range = [0,3000]
+elevation_range = [10,3000]
 
 st.set_page_config(page_title="French Industry Project", layout="wide")
 
