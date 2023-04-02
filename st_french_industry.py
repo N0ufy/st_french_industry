@@ -21,7 +21,7 @@ st.pydeck_chart(pdk.Deck(
         zoom=5,
         pitch=10, #pour la vue en angle de la map
     ),
-    layers=[
+    layers=["""
         pdk.Layer(
            'HexagonLayer',
            data=q1,
@@ -66,8 +66,8 @@ st.pydeck_chart(pdk.Deck(
            radius=800,
            get_elevation='E14TST',
            get_fill_color='[180, 0, 200, 140]'
-        
-        ),
+           
+        ),"""
         pdk.Layer(
            'ScatterplotLayer',
            data=q4,
@@ -81,7 +81,7 @@ st.pydeck_chart(pdk.Deck(
            radius=1000,
            get_elevation='E14TST',
            get_fill_color=[180, 0, 200, 140],
-        
+     
         ),
     ],
 ), use_container_width=True)
