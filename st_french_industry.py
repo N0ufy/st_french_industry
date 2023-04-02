@@ -34,56 +34,7 @@ st.pydeck_chart(pdk.Deck(
            coverage=1,
            radius=400,
            get_elevation='E14TST',
-           get_fill_color=['Gcolor', 'Gcolor', 45 , 140]
+           get_fill_color=['255', 'Gcolor', '45' , '140']
         )],
 ), use_container_width=True)
 
-"""
-        ),
-        
-        pdk.Layer(
-           'ColumnLayer',
-           data=q2,
-           get_position='[longitude, latitude]',
-           auto_highlight=True,
-           #elevation_scale=10,
-           pickable=True,
-           #elevation_range= [100,100],
-           extruded=True,
-           coverage=1,
-           radius=600,
-           get_elevation='E14TST',
-           get_fill_color=[255, 193, 0, 140]
-        
-        ),
-        pdk.Layer(
-           'ColumnLayer',
-           data=q3,
-           get_position='[longitude, latitude]',
-           auto_highlight=True,
-           #elevation_scale=15,
-           pickable=True,
-           #elevation_range= [200,200],
-           extruded=True,
-           coverage=1,
-           radius=800,
-           get_elevation='E14TST',
-           get_fill_color=[255, 152, 0, 140]
-        
-        ),
-        pdk.Layer(
-           'ColumnLayer',
-           data=q4,
-           get_position='[longitude, latitude]',
-           auto_highlight=True,
-           #elevation_scale=20,
-           pickable=True,
-           #elevation_range= [250,250],
-           extruded=True,
-           coverage=1,
-           radius=1000,
-           get_elevation='E14TST',
-           get_fill_color=[246, 65, 45, 140],
-        
-        ),
-"""
