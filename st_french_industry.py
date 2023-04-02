@@ -69,7 +69,7 @@ st.pydeck_chart(pdk.Deck(
         
         ),
         pdk.Layer(
-           'HexagonLayer',
+           'ScatterplotLayer',
            data=q4,
            get_position='[longitude, latitude]',
            auto_highlight=False,
