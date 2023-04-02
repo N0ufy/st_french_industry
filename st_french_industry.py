@@ -35,8 +35,11 @@ st.pydeck_chart(pdk.Deck(
            radius=400,
            get_elevation='E14TST',
            get_fill_color=[255, 236, 25, 140]
-        
-        )""",
+        )],
+), use_container_width=True)
+
+        """
+        ),
         
         pdk.Layer(
            'ColumnLayer',
@@ -83,5 +86,3 @@ st.pydeck_chart(pdk.Deck(
            get_fill_color=[246, 65, 45, 140],
         
         ),"""
-    ],
-), use_container_width=True)
