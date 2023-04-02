@@ -34,7 +34,7 @@ st.pydeck_chart(pdk.Deck(
            coverage=1,
            radius=400,
            get_elevation='E14TST',
-           get_fill_color=[255, 236, 'E14TST * 0.01', 140]
+           get_fill_color=[255, 'Gcolor', 45 , 140]
         )],
 ), use_container_width=True)
 
