@@ -24,7 +24,7 @@ st.pydeck_chart(pdk.Deck(
     layers=[
         pdk.Layer(
            'ColumnLayer',
-           data=q1,
+           data=df,
            get_position='[longitude, latitude]',
            auto_highlight=True,
            #elevation_scale=5,
@@ -37,7 +37,7 @@ st.pydeck_chart(pdk.Deck(
            get_fill_color=[255, 236, 25, 140]
         
         ),
-
+        """
         pdk.Layer(
            'ColumnLayer',
            data=q2,
@@ -82,6 +82,6 @@ st.pydeck_chart(pdk.Deck(
            get_elevation='E14TST',
            get_fill_color=[246, 65, 45, 140],
         
-        ),
+        ),"""
     ],
 ), use_container_width=True)
